@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: o;
+  box-sizing: border-box;
+  left: 1000;
+}
+.Titulo {
+  text-align: center;
+  color: blue;
+  background-color: aqua;
+  height: 100px;
+}
+.Header {
+  background-color: khaki;
+}
+.Search {
+  text-align: end;
+}
+.row {
+  background-color: aqua;
+  height: 400px;
+}
+    
+div {
+  
+  height: 100px;
+}
+.Inst {
+  height: 20px;
+}
+
+.Face {
+  height: 20px;
+}
+
+.What {
+  height: 20px;
+} 
+
+.Mensfoot {
+  
+  
+  text-align: end;
+}
+footer {
+  margin-top: -20px;
+  height: 150px;
+  background-color: khaki
+}
+
+.Event {
+  height: 30px;
+}
+
+.Barra {
+  margin-left: 900px;
+}
+
+
+
+
+
+
+
+
+
