@@ -56,6 +56,21 @@ footer {
   margin-left: 900px;
 }
 
+.inner {
+  overflow: hiden;
+}
+
+.inner {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+.filter {
+  display: none;
+}
 
 
 

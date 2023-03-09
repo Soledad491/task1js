@@ -27,31 +27,56 @@
     <hr>
     
     <fieldset>
-        <label for="category">category</label>
+        <label for="category">FOOD FAIR</label>
         <input type="radio" name="category" id="category">
-        <label for="category">category</label>
+        <label for="category">MUSEUM</label>
         <input type="radio" name="category" id="category">
-        <label for="category">category</label>
+        <label for="category">COSTUME PARTY</label>
         <input type="radio" name="category" id="category">
-        <label for="category">category</label>
+        <label for="category">MUSIC CONCERT</label>
         <input type="radio" name="category" id="category">
-        <label for="category">category</label>
+        <label for="category">RACE</label>
+        <input type="radio" name="category" id="category">
+        <label for="category">BOOK EXCHANGE</label>
+        <input type="radio" name="category" id="category">
+        <label for="category">CINEMA</label>
         <input type="radio" name="category" id="category">
     </fieldset>
-    <form action="../../form-result.php" method="post" target="_blank">
+    
+    
+    <form>
       <p class="Search">
-        <input type="search" name="busquedamusica" placeholder="">
+        <input type="search" placeholder="" class="cardfilter">
         <input type="submit" value="search">
       </p>
+      <ul>
+      </ul>
     </form>  
-  <script>
+
+
+    <div>
+      <label for="">
+          buscar
+          <input id="Search" type="text">
+      </label>
+      <ul id="eventname">
+
+      </ul>
+    </div>
+
+
+
+
+
+
+  <script type="module">
     let data = {
   currentDate: "2022-01-01",
   events: [
     {
       _id: 1,
       image: "https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg",
-      name: "Collectivities Party",
+      namee: "Collectivities Party",
       date: "2021-12-12",
       description: "Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
       category: "Food Fair",
@@ -63,7 +88,7 @@
     {
       _id: 2,
       image: "https://i.postimg.cc/ZmD3Xf57/Korean-style.jpg",
-      name: "Korean style",
+      namee: "Korean style",
       date: "2022-08-12",
       description: "Enjoy the best Korean dishes, with international chefs and awesome events.",
       category: "Food Fair",
@@ -75,7 +100,7 @@
     {
       _id: 3,
       image: "https://i.postimg.cc/GmHRkbNV/Jurassic-Park.jpg",
-      name: "Jurassic Park",
+      namee: "Jurassic Park",
       date: "2021-11-02",
       description: "Let's go meet the biggest dinosaurs in the paleontology museum.",
       category: "Museum",
@@ -87,7 +112,7 @@
     {
       _id: 4,
       image: "https://i.postimg.cc/c4C2zXm8/Parisian-Museum.jpg",
-      name: "Parisian Museum",
+      namee: "Parisian Museum",
       date: "2022-11-02",
       description: "A unique tour in the city of lights, get to know one of the most iconic places.",
       category: "Museum",
@@ -99,7 +124,7 @@
     {
       _id: 5,
       image: "https://i.postimg.cc/KYD0jMf2/comicon.jpg",
-      name: "Comicon",
+      namee: "Comicon",
       date: "2021-02-12",
       description: "For comic lovers, all your favourite characters gathered in one place.",
       category: "Costume Party",
@@ -111,7 +136,7 @@
     {
       _id: 6,
       image: "https://i.postimg.cc/RZ9fH4Pr/halloween.jpg",
-      name: "Halloween Night",
+      namee: "Halloween Night",
       date: "2022-02-12",
       description: "Come with your scariest costume and win incredible prizes.",
       category: "Costume Party",
@@ -123,7 +148,7 @@
     {
       _id: 7,
       image: "https://i.postimg.cc/PrMJ0ZMc/Metallica-in-concert.jpg",
-      name: "Metallica in concert",
+      namee: "Metallica in concert",
       date: "2022-01-22",
       description: "The only concert of the most emblematic band in the world.",
       category: "Music Concert",
@@ -135,7 +160,7 @@
     {
       _id: 8,
       image: "https://i.postimg.cc/KvsSK8cj/Electronic-Fest.jpg",
-      name: "Electronic Fest",
+      namee: "Electronic Fest",
       date: "2021-01-22",
       description: "The best national and international DJs gathered in one place.",
       category: "Music Concert",
@@ -147,7 +172,7 @@
     {
       _id: 9,
       image: "https://i.postimg.cc/fyLqZY9K/10-K-for-life.jpg",
-      name: "10K for life",
+      namee: "10K for life",
       date: "2021-03-01",
       description: "Come and exercise, improve your health and lifestyle.",
       category: "Race",
@@ -159,7 +184,7 @@
     {
       _id: 10,
       image: "https://i.postimg.cc/zv67r65z/15kny.jpg",
-      name: "15K NY",
+      namee: "15K NY",
       date: "2022-03-01",
       description: "We'll be raising funds for hospitals and medical care in this unique event held in The Big Apple.",
       category: "Race",
@@ -171,7 +196,7 @@
     {
       _id: 11,
       image: "https://i.postimg.cc/Sst763n6/book1.jpg",
-      name: "School's book fair",
+      namee: "School's book fair",
       date: "2022-10-15",
       description: "Bring your unused school book and take the one you need.",
       category: "Book Exchange",
@@ -183,7 +208,7 @@
     {
       _id: 12,
       image: "https://i.postimg.cc/05FhxHVK/book4.jpg",
-      name: "Just for your kitchen",
+      namee: "Just for your kitchen",
       date: "2021-11-09",
       description: "If you're a gastronomy lover come get the cookbook that best suits your taste and your family's.",
       category: "Book Exchange",
@@ -195,7 +220,7 @@
     {
       _id: 13,
       image: "https://i.postimg.cc/vH52y81C/cinema4.jpg",
-      name: "Batman",
+      namee: "Batman",
       date: "2021-03-11",
       description: "Come see Batman fight crime in Gotham City.",
       category: "Cinema",
@@ -207,7 +232,7 @@
     {
       _id: 14,
       image: "https://i.postimg.cc/T3C92KTN/scale.jpg",
-      name: "Avengers",
+      namee: "Avengers",
       date: "2022-10-15",
       description: "Marvel's Avengers Premier in 3d, the start of an epic saga with your favourite superheroes.",
       category: "Cinema",
@@ -225,7 +250,10 @@
     <div class="row">
       <div class="col-sm-2 mb-3 mb-sm-0">
         <div class="card">
-          <img src="https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg" class="card-img-top" alt="...">
+          <div class="inner">
+            <img src="https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg" class="card-img-top" alt="...">
+          </div>
+          
           <div class="card-body">
             <h5 class="card-title">Collectivities Party</h5>
             <p class="card-text">Enjoy your favourite dishes, from different countries, in a unique event for the whole family.</p>
@@ -234,6 +262,7 @@
           </div>
         </div> 
       </div>
+      
       <div class="col-sm-2">
         <div class="card">
           <img src="https://i.postimg.cc/ZmD3Xf57/Korean-style.jpg" class="card-img-top" alt="...">
